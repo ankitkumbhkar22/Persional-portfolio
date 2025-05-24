@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ankit Kumbhkar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-section {
+            padding: 8rem 5% 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--light-text);
+        }
+
+        .skills-section {
+            background-color: var(--light-background);
+            padding: 4rem 5%;
+            border-radius: 10px;
+        }
+
+        .skills-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: var(--background);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skill-list li i {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Ankit Kumbhkar</div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun"></i>
+                <span>Light</span>
+            </button></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am a 3rd-year B.Tech student specializing in Computer Science and Engineering (CSE) with a strong focus on Artificial Intelligence and Data Science. My passion for technology and innovation drives me to explore the fascinating world of AI and its applications in solving real-world problems.</p>
+                <p>Throughout my academic journey, I have developed a deep understanding of machine learning algorithms, data analysis, and web development. I believe in continuous learning and staying updated with the latest technological advancements.</p>
+                <p>My goal is to leverage my skills and knowledge to create innovative solutions that make a positive impact on society. I am particularly interested in developing AI-powered applications that can help solve complex problems in various domains.</p>
+            </div>
+            <div class="about-text">
+                <h2>Education</h2>
+                <p><strong>Bachelor of Technology in Computer Science and Engineering</strong><br>
+                Current: 3rd Year<br>
+                Focus: Artificial Intelligence and Data Science</p>
+                <p>I am pursuing my B.Tech degree with a specialization in CSE, where I have gained comprehensive knowledge in programming, algorithms, data structures, and various aspects of computer science.</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> Python</li>
+                        <li><i class="fas fa-check"></i> JavaScript</li>
+                        <li><i class="fas fa-check"></i> Java</li>
+                        <li><i class="fas fa-check"></i> C++</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> TensorFlow</li>
+                        <li><i class="fas fa-check"></i> PyTorch</li>
+                        <li><i class="fas fa-check"></i> Scikit-learn</li>
+                        <li><i class="fas fa-check"></i> Deep Learning</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> HTML5/CSS3</li>
+                        <li><i class="fas fa-check"></i> React.js</li>
+                        <li><i class="fas fa-check"></i> Node.js</li>
+                        <li><i class="fas fa-check"></i> Express.js</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> Git/GitHub</li>
+                        <li><i class="fas fa-check"></i> Docker</li>
+                        <li><i class="fas fa-check"></i> AWS</li>
+                        <li><i class="fas fa-check"></i> MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ankit-kumbhkar-41a029291/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ankitkumbhkar22" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Ankit Kumbhkar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html> 
